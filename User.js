@@ -1,27 +1,29 @@
-class User {
-  constructor(email, name, password) {
+export default class User {
+  constructor(email, name) {
     this.email = email;
     this.name = name;
-    this.password = password;
   }
 
   login() {
-    console.log(this.email, "just logged in")
+    console.log(this.email, "just logged in");
   }
   logout() {
-    console.log(this.name, "just dropped one and walked away")
+    console.log(this.name, "just dropped one and walked away");
+  }
+  displayUser() {
+    const displayUser = document.querySelector("#container");
+    displayUser.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = displayUser.querySelector("input", "text").value;
+      console.log(user);
+    })
   }
 }
- let userOne = new User("Bob@bob.com", "Bob", "heresbob");
-
-
-
-module.exports = User;
-
+let Bob = new User("Bob@bob.com", "Bob", "heresbob");
 
 // the "new" keyword
 // creates a bew empty object {}
 // sets the value of "this" to be the new empty object
 // calls the constructor method
-// userOne.login();
-// userOne.logout();
+Bob.login();
+Bob.logout();

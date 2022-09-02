@@ -1,3 +1,5 @@
-// import User from "./user";
+import Bob from "./user.js";
 
-// import User from "./user"
+// let Bob = new User("Bob@bob.com", "Bob", "heresbob");
+
+// console.log(Bob)
