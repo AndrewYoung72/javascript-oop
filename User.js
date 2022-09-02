@@ -12,7 +12,9 @@ class User {
     console.log(this.name, "just dropped one and walked away")
   }
 }
- let userOne = new User("Bob@bob.com", "Bob", "heresbob")
+ let userOne = new User("Bob@bob.com", "Bob", "heresbob");
+
+
 
 module.exports = User;
 
@@ -21,5 +23,5 @@ module.exports = User;
 // creates a bew empty object {}
 // sets the value of "this" to be the new empty object
 // calls the constructor method
-userOne.login();
-userOne.logout();
+// userOne.login();
+// userOne.logout();
