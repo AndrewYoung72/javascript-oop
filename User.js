@@ -14,6 +14,7 @@ export default class User {
 let Bob = new User("Bob@bob.com", "Bob", "heresbob");
 
 //Display user
+const list = document.querySelector(".list ul");
 
 const addUser = document.querySelector("#add-user");
 addUser.addEventListener("submit", function (e) {
@@ -32,7 +33,7 @@ userName.textContent = name;
 
 li.appendChild(userEmail);
 li.appendChild(userName);
-addUser.appendChild(li)
+list.appendChild(li)
 
 });
 
