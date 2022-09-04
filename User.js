@@ -16,13 +16,16 @@ let Bob = new User("Bob@bob.com", "Bob", "heresbob");
 //Display user
 const list = document.querySelector(".list ul");
 
+let userArray = [];
 
 const addUser = document.querySelector(".add-user");
+const newUser = new User(addUser.email, addUser.name);
 addUser.addEventListener("submit", function (e) {
   e.preventDefault();
   const email = addUser.querySelector("#email", "text").value;
   const name = addUser.querySelector("#name", "text").value;
-  console.log(email, name);
+  userArray.push(newUser);
+  console.log(userArray);
   e.target.reset();
   
 
