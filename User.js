@@ -44,5 +44,4 @@ list.appendChild(li)
 // creates a bew empty object {}
 // sets the value of "this" to be the new empty object
 // calls the constructor method
-Bob.login();
-Bob.logout();
+
