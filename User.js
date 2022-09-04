@@ -17,7 +17,7 @@ let Bob = new User("Bob@bob.com", "Bob", "heresbob");
 const list = document.querySelector(".list ul");
 
 
-const addUser = document.querySelector("#add-user");
+const addUser = document.querySelector(".add-user");
 addUser.addEventListener("submit", function (e) {
   e.preventDefault();
   const email = addUser.querySelector("#email", "text").value;

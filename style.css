@@ -1,15 +1,17 @@
 .header {
+  background: #3bbced;
   grid-column: 1/10;
 }
 
 .form-container {
-  grid-column: 4/7;
+  grid-column: 1/2;
   grid-row: 2/3;
 }
 
 .list {
-  grid-column: 3/8;
+  grid-column: 2/8;
   grid-row: auto;
+  background: #ccc;
 }
 
 .add-user input {
@@ -22,14 +24,19 @@
   padding: 10px;
 }
 
+#search-user input {
+  font-weight: bold;
+  padding: 10px;
+}
+
 
 .list ul li {
   display: inline-flex;
   justify-content: space-around;
   background: #3bbced;
-  margin: 20px 0;
+  margin: 10px;
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid whitesmoke;
   font-weight: bold;
   font-size: 16px;
   border-radius: 4px;
@@ -42,9 +49,9 @@
   grid-template-columns: repeat(10, 1fr);
   justify-content: start;
   grid-gap: 10px;
+  margin: 0 auto;
 }
 
 #grid-content div {
-  background: #3bbced;
   padding: 30px;
 }
