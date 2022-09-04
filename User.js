@@ -36,7 +36,10 @@ userName.textContent = name;
 
 li.appendChild(userEmail);
 li.appendChild(userName);
-list.appendChild(li)
+list.appendChild(li);
+
+userName.classList = "name";
+userEmail.classList = "email"
 
 });
 

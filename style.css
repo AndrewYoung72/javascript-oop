@@ -6,6 +6,7 @@
 .form-container {
   grid-column: 1/2;
   grid-row: 2/3;
+  background: #ccc;
 }
 
 .list {
@@ -24,7 +25,7 @@
   padding: 10px;
 }
 
-#search-user input {
+.search-user input {
   font-weight: bold;
   padding: 10px;
 }
