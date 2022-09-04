@@ -16,12 +16,15 @@ let Bob = new User("Bob@bob.com", "Bob", "heresbob");
 //Display user
 const list = document.querySelector(".list ul");
 
+
 const addUser = document.querySelector("#add-user");
 addUser.addEventListener("submit", function (e) {
   e.preventDefault();
   const email = addUser.querySelector("#email", "text").value;
   const name = addUser.querySelector("#name", "text").value;
   console.log(email, name);
+  e.target.reset();
+  
 
   //create element
 const li = document.createElement("li")

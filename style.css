@@ -1,3 +1,20 @@
+#form-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+
+#add-user input {
+  font-weight: bold;
+  padding: 10px;
+}
+
+#add-user button {
+  font-weight: bold;
+  padding: 10px;
+}
+
 .list {
   display: flex;
 }
@@ -15,22 +32,3 @@
   box-sizing: border-box;
   width: 300px;
 }
-
-/* .list ul li {
-  display: grid;
-  max-width: 960px;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(40px, auto);
-  grid-gap: 10px;
-  grid-template-areas:
-"aside aside main main";
-    
-}
-
-main {
-  grid-area: main;
-}
-aside {
-  grid-area: aside;
-} */
